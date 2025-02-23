@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+/* Loader styles */
+#pageLoader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Hide loader initially */
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
